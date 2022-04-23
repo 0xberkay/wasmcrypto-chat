@@ -49,7 +49,7 @@
 
             if (window["WebSocket"]) {
 
-                conn = new WebSocket("ws://192.168.0.10:3000/ws/chat");
+                conn = new WebSocket("ws://127.0.0.1:3000/ws/chat");
                 conn.onclose = function (evt) {
                     var item = document.createElement("div");
                     item.innerHTML = "<b>Lost</b>";
